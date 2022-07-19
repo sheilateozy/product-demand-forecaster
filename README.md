@@ -46,8 +46,7 @@ This translates into cost savings of $3.4 million across the various categories:
 <center><img src="readme_images/cost_savings.png"></center>
 
 
-# One cool takeaway:
-Reducing bias in permutation feature importance in the presence of highly collinear features
+<h1> One cool takeaway:<br>Reducing bias in permutation feature importance in the presence of highly collinear features</h1>
 Permutation feature importance is touted as the gold-standard method for obtaining true feature importances. This is as opposed to other methods such as impurity-based feature importances which tend to inflate the importance of continuous or high-cardinality categorical variables (Read more about this here! Beware Default Random Forest Importances). It works by randomly shuffling (permutating) each feature such that the relationship between that feature and the target is broken. With this relationship now broken, we use the same model to predict the target. The importance of the feature is then measured as the fall in accuracy of the model from before and after it was permuted.
 
 However, trouble sets in when there exists highly collinear features in the data. In this case, permutating one feature will have little effect on the models performance because it can get the same information from a correlated feature. This leads to the traditional permutation feature importance method understating the importance of such features.
