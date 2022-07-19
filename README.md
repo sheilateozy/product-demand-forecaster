@@ -33,11 +33,10 @@ Next, I explored different levels in which to conduct feature selection. Feature
 
 Among the 3 levels, I determine the optimal level at which feature selection should be conducted by back-testing across various time periods to find the level that results in the highest forecasting accuracy.
 
-## 3. Benchmark suite of machine learning models:
-Elastic Net, Random Forest, XGBoost, Deep Neural Network
+<h2>3. Benchmark suite of machine learning models:<br>Elastic Net, Random Forest, XGBoost, Deep Neural Network</h2>
 The team had primarily been using traditional Statistics-based models such as ARIMA, ARIMAX, and other regression-based models for time-series demand forecasting. However, they were keen to branch out and adopt other machine learning-based models. Hence, I also worked on benchmarking models that had not yet been used by the team prior, using a custom scoring metric termed Demand Planning Accurcacy at Nestlé.
 
-Results: Making an impact at Nestlé
+# Results: Making an impact at Nestlé
 My work increased the accuracy of product demand forecasts by 9.4% on average across 6 categories of Nestlé products, with the exact breakdown as follows:
 
 <center><img src="readme_images/accuracy_impact.png"></center>
