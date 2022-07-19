@@ -26,7 +26,7 @@ Next, I explored different levels in which to conduct feature selection. Feature
 <li><b>Product level:</b> Within any one business, there are hundreds of products. For example, two different products within Nestlé’s Baking business are pies and cakes. Conducting feature selection at the product level instead would mean selecting features to use for forecasting demand for each unique product, and using different features in modelling between different products within the same business.
 
 <li><b>Product and store level:</b> Nestlé sells its products at thousands of stores around the world. Different products are sold at each store. Conducting feature selection at the product and store level entails using different features for each product-store pair.
-
+<br>
 <center><img src="readme_images/feature_selection_business.png" width="550"></center>
 <center><img src="readme_images/feature_selection_product.png" width="550"></center>
 <center><img src="readme_images/feature_selection_product-store.png" width="550"></center>
