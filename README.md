@@ -16,7 +16,7 @@ The first aspect of my project involved designing an end-to-end framework for fe
 
 I designed an approach that utilized Recursive Feature Elimination (RFE) through Permutation Feature Importance with Random Forests. This new approach improves on the current feature selection approach used by the team through the following aspects:
 
-<center><img src="readme_images/feature_selection_tool.png" width="450"></center>
+<center><img src="readme_images/feature_selection_tool.png" width="550"></center>
 
 ## 2. Feature selection at different levels
 Next, I explored different levels in which to conduct feature selection. Feature selection can be conducted at 3 main levels:
@@ -27,9 +27,9 @@ Next, I explored different levels in which to conduct feature selection. Feature
 
 <li><b>Product and store level:</b> Nestlé sells its products at thousands of stores around the world. Different products are sold at each store. Conducting feature selection at the product and store level entails using different features for each product-store pair.
 
-<center><img src="readme_images/feature_selection_business.png"></center>
-<center><img src="readme_images/feature_selection_product.png"></center>
-<center><img src="readme_images/feature_selection_product-store.png"></center>
+<center><img src="readme_images/feature_selection_business.png" width="550"></center>
+<center><img src="readme_images/feature_selection_product.png" width="550"></center>
+<center><img src="readme_images/feature_selection_product-store.png" width="550"></center>
 
 Among the 3 levels, I determine the optimal level at which feature selection should be conducted by back-testing across various time periods to find the level that results in the highest forecasting accuracy.
 
@@ -39,11 +39,11 @@ The team had primarily been using traditional Statistics-based models such as AR
 # Results: Making an impact at Nestlé
 My work increased the accuracy of product demand forecasts by 9.4% on average across 6 categories of Nestlé products, with the exact breakdown as follows:
 
-<center><img src="readme_images/accuracy_impact.png" width="450"></center>
+<center><img src="readme_images/accuracy_impact.png" width="550"></center>
 
 This translates into cost savings of $3.4 million across the various categories:
 
-<center><img src="readme_images/cost_savings.png" width="450"></center>
+<center><img src="readme_images/cost_savings.png" width="550"></center>
 
 
 <h1> One cool takeaway:<br>Reducing bias in permutation feature importance in the presence of highly collinear features</h1>
