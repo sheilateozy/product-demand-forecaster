@@ -82,4 +82,4 @@ As outlined above, there are 3 main levels of forecasting investigated: At the b
 Machine learning is an iterative process. I explore the following models to determine the best for this project's use-case: Elastic Net, Random Forest, XGBoost, Deep Neural Network.
 
 # Still curious?
-I authored an internship report covering the details of my methodology. This report was given an A+ grade by Columbia Engineering faculty. You can find my paper <a href="___">here</a>, or my presentation slides <a href="___">here</a> :)
+I authored an internship report covering the details of my methodology. This report was given an A+ grade by Columbia Engineering faculty. You can find my paper <a href="https://github.com/sheilateozy/Nestle-_Forecasting-Product-Demand/blob/main/internship_report.pdf">here</a>, or my presentation slides <a href="https://github.com/sheilateozy/Nestle-_Forecasting-Product-Demand/blob/main/presentation_slides.pdf">here</a> :)
