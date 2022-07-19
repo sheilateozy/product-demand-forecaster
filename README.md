@@ -7,7 +7,7 @@ I interned as a Data Scientist at Nestlé USA.
 <li> Data visualisation dashboarding on Microsoft Power BI to depict business impact of new models.
 
 # About
-I interned as a Data Scientist at Nestlé USA on the Supply Chain Analytics team, which utilizes Data Science to forecast demand for hundreds of thousands of Nestlé’s products. My work involved improving their existing demand forecasting models through 3 aspects, as follows:
+My work involved improving Nestlé's existing demand forecasting models through 3 aspects, as follows:
 
 ## 1. Feature selection tool: Recursive Feature Elimination
 Nestlé collects an enormous amount of data, such as demand data, promotional data, holiday data, and competitor data. With this large amount of features available to be used for modelling, the team required a robust feature selection tool.
