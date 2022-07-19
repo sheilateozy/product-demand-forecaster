@@ -27,6 +27,7 @@ Next, I explored different levels in which to conduct feature selection. Feature
 
 <li><b>Product and store level:</b> Nestlé sells its products at thousands of stores around the world. Different products are sold at each store. Conducting feature selection at the product and store level entails using different features for each product-store pair.
 <br>
+<br>
 <center><img src="readme_images/feature_selection_business.png" width="550"></center>
 <center><img src="readme_images/feature_selection_product.png" width="550"></center>
 <center><img src="readme_images/feature_selection_product-store.png" width="550"></center>
