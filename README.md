@@ -59,5 +59,5 @@ This translates into cost savings of $3.4 million across the various categories:
 8. Repeat for different models to determine optimal model
 
 # Still curious?
-Check out this project on my website <a href="_____">here</a> :)
+Check out this project on my website <a href="https://sheilateozy.github.io/#portfolio" target="_blank">here</a> :)
   
