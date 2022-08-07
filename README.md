@@ -1,4 +1,6 @@
-<h1>Forecasting Nestlé's product demand<br>Using Random Forests with Recursive Feature Elimination</h1>
+# Forecasting Nestlé's product demand
+## Using Random Forests with Recursive Feature Elimination
+
 I interned as a Data Scientist at Nestlé USA.
 <br><br>This is the project that I worked on, which increased demand prediction accuracy by 9.4% from existing models, translating into cost savings of $3.4 million.
 <li> SQL to query and manipulate big data on SAS.
