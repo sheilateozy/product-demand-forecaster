@@ -58,6 +58,6 @@ This translates into cost savings of $3.4 million across the various categories:
 7. Repeat for various levels of forecasting to determine optimal level
 8. Repeat for different models to determine optimal model
 
-# Still curious?# Still curious?
+# Still curious?
 Check out this project on my website <a href="_____">here</a> :)
   
