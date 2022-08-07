@@ -48,41 +48,16 @@ This translates into cost savings of $3.4 million across the various categories:
 
 <center><img src="readme_images/cost_savings.png" width="550"></center>
 
-
-<h1> One cool takeaway:<br>Reducing bias in permutation feature importance in the presence of highly collinear features</h1>
-Permutation feature importance is touted as the gold-standard method for obtaining true feature importances. This is as opposed to other methods such as impurity-based feature importances which tend to inflate the importance of continuous or high-cardinality categorical variables (Read more about this here! Beware Default Random Forest Importances). It works by randomly shuffling (permutating) each feature such that the relationship between that feature and the target is broken. With this relationship now broken, we use the same model to predict the target. The importance of the feature is then measured as the fall in accuracy of the model from before and after it was permuted.
-
-However, trouble sets in when there exists highly collinear features in the data. In this case, permutating one feature will have little effect on the models performance because it can get the same information from a correlated feature. This leads to the traditional permutation feature importance method understating the importance of such features.
-
-To overcome this problem, I group features that are collinear and permute them together as a meta-feature. This allows me to obtain the true unbiased importance of highly collinear features as a group.
-
-
 # Project Methodology
-## 1. Feature engineering: Transform time-series problem into supervised learning problem
-<li>Lag variables of past demand and consumption information
-<li>Rolling mean and rolling standard deviation of existing features
-<li>Calendar signatures, eg. Week number in year
+1. Feature engineering: Transform time-series problem into supervised learning problem
+2. Encode categorical variables using Hash Encoding
+3. Tune Random Forest using Random Search
+4. Obtain unbiased permutation feature importances
+5. Feature selection using Recursive Feature Elimination (RFE)
+6. Train model on optimal subset of features
+7. Repeat for various levels of forecasting to determine optimal level
+8. Repeat for different models to determine optimal model
 
-## 2. Encode categorical variables using Hash Encoding
-The categorical variables in the dataset are of high cardinality. As such, I utilize Hash Encoding, which reduces the number of new features created from the encoding to a lower dimension. This dimension is chosen from a trade-off: The larger the number of dimensions, the more information we retain from the original categorical feature after encoding it. However, this also results in sparser feature matrices that may reduce the performance of any machine learning model.
-
-## 3. Tune Random Forest using random search
-Use Apache Spark backend to conduct this random search in parallel for faster runtime.
-
-## 4. Obtain unbiased permutation feature importances
-Taking extra care to group highly collinear features together to obtain unbiased importances.
-
-## 5. Feature selection using Recursive Feature Elimination (RFE)
-RFE is a recursive process in that it progressively considers smaller and smaller subsets of the original features. The process starts by using all the original features, building a Random Forest with them, and obtaining feature importance scores for all the features. This describes steps 1 and 2 outlined above. Next, we discard the feature identified to be the least important, and repeat the above. This repetition continues until the size of the feature set has been incrementally reduced by 1 until it becomes 0. Following which, the optimal feature subset is the one that produces the highest model accuracy score on the validation set.
-
-## 6. Train model on optimal subset of features
-Obtain test set predictions for various time periods to validate model
-
-## 7. Repeat for various levels of forecasting to determine optimal level
-As outlined above, there are 3 main levels of forecasting investigated: At the business level, product level, and product-store level.
-
-## 8. Repeat for different models to determine optimal model
-Machine learning is an iterative process. I explore the following models to determine the best for this project's use-case: Elastic Net, Random Forest, XGBoost, Deep Neural Network.
-
-# Still curious?
-I authored an internship report covering the details of my methodology. This report was given an A+ grade by Columbia Engineering faculty. You can find my paper <a href="https://github.com/sheilateozy/Nestle-_Forecasting-Product-Demand/blob/main/internship_report.pdf">here</a>, or my presentation slides <a href="https://github.com/sheilateozy/Nestle-_Forecasting-Product-Demand/blob/main/presentation_slides.pdf">here</a> :)
+# Still curious?# Still curious?
+Check out this project on my website <a href="_____">here</a> :)
+  
